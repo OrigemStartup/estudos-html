@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        form {
+            background-color: lightgray;
+            border: 2px black solid;
+            border-radius: 10px;
+            width: 300px;
+            padding-left: 10px;
+           
+        }
+        input#botao01 {
+            background-color: lightgreen;
+            border-radius: 5px;
+            width: +20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <h2>Cadastre-se agora!</h2>
+        <p>
+            <label for="iusu">Usuário:</label><br>
+            <input type="text" name="usu" id="iusu" required minlength="5" placeholder="nome do usuário">
+        </p>
+        <p>
+            <label for="isen">Senha:</label><br>
+            <input type="password" name="Sen" id="isen" required>
+        </p>
+        <p><input type="submit" value="Enviar" id="botao01">
+            <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
